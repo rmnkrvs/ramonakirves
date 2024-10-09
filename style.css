@@ -121,10 +121,11 @@ div {
 /* vaalea osio */
 
 h2 {
-    margin: 2.5rem 3.125rem 1.25rem 3.125rem;
+    margin: 2.5rem 3.125rem 1rem 3.125rem;
 }
 
-.kuva1, .kuva2 {
+.kuva1,
+.kuva2 {
     width: 80%;
     margin: auto;
     padding: 2.5rem 0px 2.5rem 0px;
@@ -132,7 +133,7 @@ h2 {
 }
 
 .logo {
-    width: 7rem;
+    width: 5rem;
     margin: 30px 5px 50px 5px;
 }
 
@@ -250,15 +251,17 @@ footer a {
         margin: 60px 10px;
     }
 
-    .osio p, .osio2 p {
+    .osio p,
+    .osio2 p {
         margin: 30px 30% 50px 30%;
     }
-    
+
     h2 {
         margin: 50px 50px 0px 50px;
     }
-    
-    .kuva1, .kuva2 {
+
+    .kuva1,
+    .kuva2 {
         width: 450px;
         height: auto;
         margin: 20px;
@@ -284,13 +287,13 @@ footer a {
         width: 120px;
         margin: 30px 10px 50px 10px;
     }
-    
+
     input[type="text"],
     textarea {
         font-size: 16px;
     }
-    
-   footer {
+
+    footer {
         padding: 40px;
     }
 }
