@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ramona Kirves</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="contact.html">Contact me</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <header>
+
+        <h1>RAMONA KIRVES</h1>
+
+    </header>
+
+    <div class="otsikkopalkki">
+
+        <p class="otsikko">Home</p>
+
+    </div>
+
+    <div class="osio">
+
+        <h2>Hi, I'm Ramona!</h2>
+        <p>I’m an enthusiastic people professional and future tech pro with excellent organizational skills. I’m passionate about employee experience and creating thriving workplaces. I’m here to help you with office management, project coordination or event organization. Let’s connect and see what I can do for you!</p>
+        <button id="read" onclick="siirryAbout()" class="isonappi">Read more</button>
+
+    </div>
+
+    <div class="osio2">
+
+        <p>
+            <img src="ramona1.jpg" alt="Ramonan profiilikuva" class="kuva1">
+        </p>
+
+    </div>
+
+    <div class="osio">
+
+        <h2>Said about me:</h2>
+
+        <div class="karuselli">
+            <div class="palautteet aktiivinen">"An incredibly reliable individual who always gets things done as agreed,
+                reaching the finish line with 100% accuracy. Ramona is capable of taking charge of matters, moving them
+                forward, and even enhancing them."</div>
+            <div class="palautteet">"Ramona's communication skills, both verbal and written, in both Finnish and
+                English, are at an excellent level. Ramona invests a lot of herself into her work, which is impressive
+                and commendable."</div>
+            <div class="palautteet">"Ramona has the superpower of bringing clarity and structure, and a can-do mindset
+                that makes wonders. She always seems to have everything figured out well in advance, you help others to
+                succeed. Pure 💎” </div>
+            <div class="palautteet">"It's been amazing to work with Ramona and the attitude with which she tackles
+                things is awesome! She’s really handled all possible tasks, and even the impossible ones, very well. And
+                always so cheerful!" </div>
+            <div class="palautteet">"It was a great pleasure to work for Ramona and learn from her. She left big boots
+                to be filled but also gave really good guidance to start with. Of all the bosses I've ever had she was
+                the best one to work with!"</div>
+        </div>
+
+        <button class="nappi edellinen" onclick="vaihdaPalautetta(-1)">&#10094;</button>
+        <button class="nappi seuraava" onclick="vaihdaPalautetta(1)">&#10095;</button>
+    </div>
+
+    <div class="osio2">
+
+        <button id="contact" onclick="siirryContact()">Contact me!</button>
+
+    </div>
+
+    <footer>
+
+        <p><i class="fas fa-phone"></i> +358 45 133 8494</p>
+        <p><i class="fas fa-envelope"></i> kirvesramona@outlook.com</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ramonakirves/"
+                target="blank">LinkedIn</a></p>
+        <p></p>
+        <p class="copyrights">© Ramona Kirves 2024.</p>
+
+    </footer>
+
+
+    <script>
+
+        function siirryContact() {
+            window.location.href = "contact.html";
+        }
+
+        function siirryAbout() {
+            window.location.href = "about.html";
+        }
+
+        let nykyinenIndeksi = 0;
+        const palautteet = document.querySelectorAll('.palautteet');
+
+        function naytaPalaute(indeksi) {
+            palautteet.forEach((palautteenDiv, i) => {
+                if (i === indeksi) {
+                    palautteenDiv.classList.add('aktiivinen');
+                } else {
+                    palautteenDiv.classList.remove('aktiivinen');
+                }
+            });
+        }
+
+        function vaihdaPalautetta(suunta) {
+            nykyinenIndeksi += suunta;
+
+            if (nykyinenIndeksi < 0) {
+                nykyinenIndeksi = palautteet.length - 1;
+            } else if (nykyinenIndeksi >= palautteet.length) {
+                nykyinenIndeksi = 0;
+            }
+
+            naytaPalaute(nykyinenIndeksi);
+        }
+
+        naytaPalaute(nykyinenIndeksi);
+
+    </script>
+</body>
+
+</html>

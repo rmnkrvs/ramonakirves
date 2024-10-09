@@ -1,0 +1,303 @@
+/* Google fontit
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: light;
+    font-style: normal;
+  }
+
+   Google fontit */
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #cad2c5;
+    font-family: 'Montserrat';
+}
+
+/* navigaatio */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #354f52;
+    font-size: 14px;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #52796f;
+}
+
+.active {
+    background-color: #52796f;
+}
+
+/* navigaatio */
+
+header {
+    padding: 40px;
+    margin: -10px;
+    background-color: #354f52;
+}
+
+header h1 {
+    font-family: 'Montserrat';
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin: 30px 10px 30px 10px;
+}
+
+div {
+    border: 1px;
+    border-color: transparent;
+    border-style: solid;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.otsikkopalkki {
+    background-color: #52796f;
+    text-align: center;
+    padding: 0px;
+    color: white;
+}
+
+/* vihreä osio */
+
+.osio {
+    background-color: #84a98c;
+    text-align: center;
+    color: white;
+}
+
+.osio p {
+    margin: 30px 15% 30px 15%;
+    text-align: center;
+}
+
+/* vihreä osio */
+/* vaalea osio */
+
+.osio2 {
+    color: white;
+    text-align: center;
+}
+
+.osio2 p {
+    margin: 20px 15% 30px 15%;
+    color: #44494C;
+}
+
+.osio2 h2 {
+    color: #44494C;
+}
+
+/* vaalea osio */
+
+h2 {
+    margin: 40px 50px 20px 50px;
+}
+
+.kuva1 {
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+.kuva2 {
+    width: 400px;
+    object-fit: cover;
+    margin: auto;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+.logo {
+    width: 90px;
+    margin: 30px 5px 50px 5px;
+}
+
+button {
+    background-color: #52796f;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 30px 20px 30px;
+    margin: 40px;
+    font-family: 'Montserrat';
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+.isonappi {
+    margin: 0px 0px 40px 0px;
+}
+
+button:hover {
+    background-color: #354f52;
+}
+
+/* palautekaruselli */
+
+.karuselli {
+    margin: 30px 15% 30px 15%;
+}
+
+.palautteet {
+    transform: translateY(0%);
+    display: none;
+}
+
+.aktiivinen {
+    display: block;
+}
+
+.nappi {
+    transform: translateY(0%);
+    font-size: 16px;
+    padding: 20px 25px 20px 25px;
+    margin: 10px 30px 50px 30px;
+}
+
+/* palautekaruselli */
+
+/* yhteydenottolomake */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+input[type="text"],
+textarea {
+    padding: 20px;
+    margin: 0px 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+
+textarea {
+    height: 150px;
+}
+
+.submitnappi {
+    margin: auto;
+}
+
+.submitnappi:hover {
+    background-color: #354f52;
+}
+
+/* yhteydenottolomake */
+
+footer {
+    padding: 40px;
+    text-align: center;
+    font-size: 13px;
+    background-color: #354f52;
+}
+
+footer p {
+    color: white;
+}
+
+footer i {
+    margin: 0px 5px 0px 0px;
+}
+
+footer a {
+    color: white;
+}
+
+.copyrights {
+    margin: 60px 0px 0px 0px;
+}
+
+/* mediakyselyt */
+
+@media screen and (min-width: 1025px) {
+
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin: 60px 10px;
+    }
+
+    .osio p, .osio2 p {
+        margin: 30px 30% 50px 30%;
+    }
+    
+    h2 {
+        margin: 50px 50px 0px 50px;
+    }
+    
+    .kuva1, .kuva2 {
+        width: 450px;
+        height: auto;
+        margin: 20px;
+    }
+
+    nav li a {
+        text-align: center;
+        padding: 20px 40px;
+        font-size: 16px;
+    }
+
+    .karuselli {
+        margin: 50px 30% 50px 30%;
+    }
+
+    .isonappi {
+        font-size: 18px;
+        padding: 20px 30px 20px 30px;
+        margin: 0px 50px 50px 50px;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 30px 10px 50px 10px;
+    }
+    
+    input[type="text"],
+    textarea {
+        font-size: 16px;
+    }
+    
+   footer {
+        padding: 40px;
+    }
+}
